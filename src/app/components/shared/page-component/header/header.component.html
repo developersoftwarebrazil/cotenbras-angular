@@ -1,1 +1,14 @@
-<p>header works!</p>
+<header class="header-bg">
+  <div class="header container">
+    <div class="logo">
+      <a href=""><img [src]="logoImageUrl" [alt]="logoImageAltText"></a>
+
+    </div>
+    <nav-component
+    [navItems]="[
+      {label:'Sobre', link:'sobre'},
+      {label:'Contato', link:'contato'},
+      {label:'Area do aluno', link:'formulario'},
+    ]"></nav-component>
+  </div>
+</header>

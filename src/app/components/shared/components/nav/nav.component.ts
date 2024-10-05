@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-nav',
+  selector: 'nav-component',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule,
+  ],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
-
+  @Input() navItems: { label: string, link: string, classes?: string }[] = [];
+  @Input() ariaLabel!: string;
+  @Input() ulClasses!: string;
 }
