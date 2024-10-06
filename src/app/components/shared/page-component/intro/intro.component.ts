@@ -1,9 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
-  selector: 'app-intro',
+  selector: 'intro-component',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule,
+    HeaderComponent
+  ],
   templateUrl: './intro.component.html',
   styleUrl: './intro.component.scss'
 })

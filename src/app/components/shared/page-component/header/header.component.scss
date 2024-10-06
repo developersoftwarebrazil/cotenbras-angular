@@ -1,6 +1,6 @@
 @import "../../../../../css_config/style_global_variables.scss";
 .header-bg {
-  background: $black-12;
+  background: transparent;
 }
 
 .header {
@@ -11,4 +11,30 @@
   align-items: center;
   padding-top: $padding-top-med-min-width; //20px
   padding-bottom: $padding-bottom-med-min-width; //20px;
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+    img{
+      width: 48px;
+    }
+    span {
+      color: var(--cor-p0);
+      font: 600 1.8rem/2 "Poppins", sans-serif;
+      text-transform: uppercase;
+      margin-left: $margin-left-min-smallest-width;
+    }
+  }
+  span::before{
+    display: inline-block;
+    content: '';
+    height: 20px;
+    width: 2px;
+    background: var(--cor-p5) no-repeat;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
 }
+//

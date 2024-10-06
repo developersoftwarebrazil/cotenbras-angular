@@ -1,14 +1,15 @@
 <header class="header-bg">
   <div class="header container">
     <div class="logo">
-      <a href=""><img [src]="logoImageUrl" [alt]="logoImageAltText"></a>
-
+      <a href=""><img [src]="logoImageUrl" [alt]="logoImageAltText"> </a>
+      <span> {{logoImageText}}</span>
     </div>
-    <nav-component
-    [navItems]="[
+
+    <nav-component [navItems]="[
+
       {label:'Sobre', link:'sobre'},
       {label:'Contato', link:'contato'},
       {label:'Area do aluno', link:'formulario'},
-    ]" ariaLabel="primaria" ulClasses="nav-menu font-1-m cor-0"></nav-component>
+    ]" ariaLabel="primaria" ulClasses="nav-menu links font-1-m cor-0"></nav-component>
   </div>
 </header>

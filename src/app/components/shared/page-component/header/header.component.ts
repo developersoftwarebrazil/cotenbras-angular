@@ -14,6 +14,7 @@ import { NavComponent } from '../../components/nav/nav.component';
 })
 export class HeaderComponent {
 
-  @Input() logoImageUrl: string = 'assets/logo/logo.svg';
+  @Input() logoImageUrl: string = '../../../../../assets/logo/logo.svg';
+  @Input() logoImageText: string ='contebras';
   @Input() logoImageAltText: string = 'logo da marca';
 }

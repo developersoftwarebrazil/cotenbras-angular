@@ -48,6 +48,7 @@ img [src$=".jpg"] {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem; // 40px
+  text-transform: uppercase;
 
   a {
     display: inline-block;
@@ -65,7 +66,15 @@ img [src$=".jpg"] {
       transition: 0.3s;
       position: absolute;
     }
-
+    &::before{
+      display: inline-block;
+      content: '';
+      height: 16px;
+      width: 2px;
+      background: var(--cor-p5) no-repeat;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
     &:hover::after {
       width: 100%;
     }

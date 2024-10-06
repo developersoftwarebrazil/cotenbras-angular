@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
 export class LinkComponent {
   @Input() label: string = "Link";
   @Input() route!: string;
-  @Input() class!: string;
+  @Input() class: string ='links';
 
   constructor(private router: Router) { }
 
