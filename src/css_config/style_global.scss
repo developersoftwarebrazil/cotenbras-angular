@@ -24,7 +24,7 @@ a {
   color: inherit;
 }
 img {
-  max-width: $full-width;
+  max-width: $full-screen-width;
   display: block;
 }
 img [src$=".jpg"] {
@@ -33,8 +33,8 @@ img [src$=".jpg"] {
 
 .container {
   box-sizing: border-box;
-  padding: $padding-medium; // 20px
-  max-width: $max-width; // 1200px
+  padding: $padding-med-min-width; // 20px
+  max-width: $bigger-screen-width; // 1200px
   margin-left: auto;
   margin-right: auto;
 }
@@ -73,7 +73,7 @@ img [src$=".jpg"] {
 }
 
 // 800px
-@media (max-width: 50rem) {
+@media (max-width: $large-screen-width) {
   .nav-menu {
     gap: 1.25rem; // 20px
 
@@ -94,11 +94,11 @@ img [src$=".jpg"] {
 }
 
 // 400px
-@media (max-width: 25rem) {
+@media (max-width: $small-screen-width) {
   .nav-menu {
-    gap: 0.75rem; // 12px
+    gap: $gap-med-min-width; // 12px
     a {
-      background: var(--cor-11);
+      background: $dark-gray-11;
       padding: 0.5rem 0.75rem; // 8px 12px
       border-radius: 0.25rem;
       font-size: 0.875rem; // 14px
@@ -122,17 +122,17 @@ img [src$=".jpg"] {
   background-color: var(--cor-11);
 
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width: $large-screen-width) {
     padding-top: 2.5rem; //40px
     padding-bottom: 2.5rem; //40px
   }
 }
 .titulo {
   p {
-    margin-bottom: 0.25rem; //4px
+    margin-bottom: $margin-bottom-min-width; //4px
   }
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width: $large-screen-width) {
     p {
       font-size: 1rem;
       font-weight: 400;
@@ -141,7 +141,7 @@ img [src$=".jpg"] {
   }
   .titulo-bicicleta {
     //800px
-    @media (max-width: 50rem) {
+    @media (max-width: $large-screen-width) {
       text-transform: uppercase;
     }
   }
@@ -157,16 +157,16 @@ img [src$=".jpg"] {
 
 .contato-dados,
 .formulario-contato {
-  padding: $padding-big; //60px
+  padding: $padding-large-small-width; //60px
   box-shadow: $box-shadow-padrao;
 
   //800px
-  @media (max-width: $larger-width) {
-    padding: $padding-bottom-small; //20px
+  @media (max-width: $large-screen-width) {
+    padding: $padding-bottom-med-min-width; //20px
   }
 }
 
 //
-radio-buttom-component {
-  display: flex;
-}
+// radio-buttom-component {
+//   display: flex;
+// }

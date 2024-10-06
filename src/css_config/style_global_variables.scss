@@ -45,7 +45,7 @@ $full-screen-width: 100%;
 $max-screen-width: 87.5rem; //1400px
 $bigger-screen-width: 75rem; //1200px
 $big-screen-width: 64rem; //1024px
-$larger-screen-width: 50rem; //800px
+$large-screen-width: 50rem; //800px
 $medium-screen-width: 37.5rem; //600px
 $small-screen-width: 25rem; ///400px
 $smaller-screen-width: 22.5rem; //360px
@@ -97,7 +97,7 @@ $gap-large-width: 2.5rem; //40px
 $gap-med-small-width: 2.25rem; //36px
 $gap-med-smaller-width: 2rem; //32px
 $gap-med-smallest-width: 1.5rem; //24px
-$gap-med-width: 1.25rem; //20px
+$gap-med-min-width: 1.25rem; //20px
 
 $gap-min-small-width: 1rem; //16px
 $gap-min-smaller-width: 0.75rem; //12px
@@ -120,7 +120,7 @@ $padding-large-width: 2.5rem; //40px
 $padding-med-small-width: 2.25rem; //36px
 $padding-med-smaller-width: 2rem; //32px
 $padding-med-smallest-width: 1.5rem; //24px
-$padding-med-width: 1.25rem; //20px
+$padding-med-min-width: 1.25rem; //20px
 
 $padding-min-small-width: 1rem; //16px
 $padding-min-smaller-width: 0.75rem; //12px
@@ -143,7 +143,7 @@ $padding-top-large-width: 2.5rem; //40px
 $padding-top-med-small-width: 2.25rem; //36px
 $padding-top-med-smaller-width: 2rem; //32px
 $padding-top-med-smallest-width: 1.5rem; //24px
-$padding-top-med-width: 1.25rem; //20px
+$padding-top-med-min-width: 1.25rem; //20px
 
 $padding-top-min-small-width: 1rem; //16px
 $padding-top-min-smaller-width: 0.75rem; //12px
@@ -165,7 +165,7 @@ $padding-bottom-large-width: 2.5rem; //40px
 $padding-bottom-med-small-width: 2.25rem; //36px
 $padding-bottom-med-smaller-width: 2rem; //32px
 $padding-bottom-med-smallest-width: 1.5rem; //24px
-$padding-bottom-med-width: 1.25rem; //20px
+$padding-bottom-med-min-width: 1.25rem; //20px
 
 $padding-bottom-min-small-width: 1rem; //16px
 $padding-bottom-min-smaller-width: 0.75rem; //12px
@@ -187,7 +187,7 @@ $padding-right-large-width: 2.5rem; //40px
 $padding-right-med-small-width: 2.25rem; //36px
 $padding-right-med-smaller-width: 2rem; //32px
 $padding-right-med-smallest-width: 1.5rem; //24px
-$padding-right-med-width: 1.25rem; //20px
+$padding-right-med-min-width: 1.25rem; //20px
 
 $padding-right-min-small-width: 1rem; //16px
 $padding-right-min-smaller-width: 0.75rem; //12px
@@ -210,7 +210,7 @@ $padding-left-large-width: 2.5rem; //40px
 $padding-left-med-small-width: 2.25rem; //36px
 $padding-left-med-smaller-width: 2rem; //32px
 $padding-left-med-smallest-width: 1.5rem; //24px
-$padding-left-med-width: 1.25rem; //20px
+$padding-left-med-min-width: 1.25rem; //20px
 
 $padding-left-min-small-width: 1rem; //16px
 $padding-left-min-smaller-width: 0.75rem; //12px
@@ -233,7 +233,7 @@ $margin-large-width: 2.5rem; //40px
 $margin-med-small-width: 2.25rem; //36px
 $margin-med-smaller-width: 2rem; //32px
 $margin-med-smallest-width: 1.5rem; //24px
-$margin-med-width: 1.25rem; //20px
+$margin-med-min-width: 1.25rem; //20px
 
 $margin-min-small-width: 1rem; //16px
 $margin-min-smaller-width: 0.75rem; //12px
@@ -256,7 +256,7 @@ $margin-top-large-width: 2.5rem; //40px
 $margin-top-med-small-width: 2.25rem; //36px
 $margin-top-med-smaller-width: 2rem; //32px
 $margin-top-med-smallest-width: 1.5rem; //24px
-$margin-top-med-width: 1.25rem; //20px
+$margin-top-med-min-width: 1.25rem; //20px
 
 $margin-top-min-small-width: 1rem; //16px
 $margin-top-min-smaller-width: 0.75rem; //12px
@@ -278,7 +278,7 @@ $margin-bottom-large-width: 2.5rem; //40px
 $margin-bottom-med-small-width: 2.25rem; //36px
 $margin-bottom-med-smaller-width: 2rem; //32px
 $margin-bottom-med-smallest-width: 1.5rem; //24px
-$margin-bottom-med-width: 1.25rem; //20px
+$margin-bottom-med-min-width: 1.25rem; //20px
 
 $margin-bottom-min-small-width: 1rem; //16px
 $margin-bottom-min-smaller-width: 0.75rem; //12px
@@ -300,7 +300,7 @@ $margin-right-large-width: 2.5rem; //40px
 $margin-right-med-small-width: 2.25rem; //36px
 $margin-right-med-smaller-width: 2rem; //32px
 $margin-right-med-smallest-width: 1.5rem; //24px
-$margin-right-med-width: 1.25rem; //20px
+$margin-right-med-min-width: 1.25rem; //20px
 
 $margin-right-min-small-width: 1rem; //16px
 $margin-right-min-smaller-width: 0.75rem; //12px
@@ -323,7 +323,7 @@ $margin-left-large-width: 2.5rem; //40px
 $margin-left-med-small-width: 2.25rem; //36px
 $margin-left-med-smaller-width: 2rem; //32px
 $margin-left-med-smallest-width: 1.5rem; //24px
-$margin-left-med-width: 1.25rem; //20px
+$margin-left-med-min-width: 1.25rem; //20px
 
 $margin-left-min-small-width: 1rem; //16px
 $margin-left-min-smaller-width: 0.75rem; //12px

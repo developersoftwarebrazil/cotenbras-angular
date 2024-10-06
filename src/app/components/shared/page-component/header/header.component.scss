@@ -1,5 +1,14 @@
+@import "../../../../../css_config/style_global_variables.scss";
 .header-bg {
-  background: #000;
+  background: $black-12;
 }
 
-//
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap-med-min-width; // 20px
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $padding-top-med-min-width; //20px
+  padding-bottom: $padding-bottom-med-min-width; //20px;
+}
